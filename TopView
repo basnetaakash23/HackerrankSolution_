@@ -1,0 +1,20 @@
+   /* 
+    
+    class Node 
+       int data;
+       Node left;
+       Node right;
+   */
+   void topView(Node root) {
+       while(root!=null){
+        System.out.print(root.data+" ");
+        if(root.right!=null){
+            root = root.right;
+        }
+        else{
+            root = root.left;
+        }
+    }
+      
+      
+    }

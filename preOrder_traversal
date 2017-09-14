@@ -1,0 +1,20 @@
+void preOrder(Node root) {
+    if(root == null){
+        return;
+    }
+    
+    System.out.print(root.data+" ");
+    
+    if(root.left!=null){
+       
+        //System.out.println(root.data);
+        preOrder(root.left);
+    }
+    
+    else if(root.right!=null){
+        
+        //System.out.println(root.data);
+        preOrder(root.right);
+    }
+
+}
