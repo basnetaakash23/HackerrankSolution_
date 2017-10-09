@@ -1,0 +1,13 @@
+cube = lambda x:x*x*x # complete the lambda function
+print(list(map(cube,[0,1,1,2,3])))
+
+def fibonacci(n):
+    # return a list of fibonacci numbers
+    prev = 0
+    a = []
+    for x in range(0,5):
+        sum = prev + x
+        prev = sum
+        a.append(sum)
+        
+    print(list(map(cube,a)))
